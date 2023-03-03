@@ -46,6 +46,17 @@ class LihatUser extends Controller
         $this->view('lihatUser/petugas', $data);
         $this->view('templates/footer', $data);
     }
+    public function preview_petugas()
+    {
+        $data['judul'] = 'Lihat User';
+        $data['petugas'] = $this->model('PetugasModel')->ambilSemuaDataPetugas();
+        $tombol = $this->model('TombolModel')->__construct();
+        $this->view('SuperAdmin');
+        $this->view('templates/header', $data);
+        $this->view($tombol);
+        $this->view('lihatUser/preview_petugas', $data);
+        $this->view('templates/footer', $data);
+    }
     public function hapusPetugas($id)
     {
         $this->view('SuperAdmin');
