@@ -1,7 +1,7 @@
 <div id="wrapper">
 
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion no-print" id="accordionSidebar">
 
   <!-- Sidebar - Brand -->
   <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= BASEURL; ?>/Home">
@@ -42,6 +42,17 @@
         <a class="collapse-item bg-light mb-2" href="<?= BASEURL; ?>/LihatUser/Petugas" data-toggle="modal" data-target="#ModalBuatPetugas"> Buat Petugas <i class="fas fa-user-plus ml-1   text-primary"></i></a>
         <a class="collapse-item bg-light mb-2" href="<?= BASEURL; ?>/LihatUser/Petugas"> Lihat Petugas <i class="fas fa-user-cog ml-1 text-primary"></i></a>
         <a class="collapse-item bg-light mb-2" href="<?= BASEURL; ?>/VerifikasiAdmin"> Verifikasi Admin  <i class="fas fa-user-tag text-primary ml-2"></i>  </a>
+      </div>
+    </div>
+  </li>
+  <li class="nav-item mt-n2">
+    <a class="nav-link collapsed" data-toggle="collapse" data-target="#collapseFive">
+      <i class="fas fa-file"></i>
+      <span class="pengaduan">Laporan</span>
+    </a>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded bg-gradient-primary">
+        <a class="collapse-item bg-light mb-2" href="<?= BASEURL; ?>/LihatUser/preview_petugas"> Laporan Petugas  <i class="fas fa-user-tag text-primary ml-2"></i>  </a>
       </div>
     </div>
   </li>

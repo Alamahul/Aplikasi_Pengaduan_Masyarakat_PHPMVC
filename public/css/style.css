@@ -20,3 +20,12 @@ main{
         font-size: 15px;
     }
 }
+
+@media print {
+    .no-print{
+        display: none;
+    }
+    th{
+        background-color: blue;
+    }
+}

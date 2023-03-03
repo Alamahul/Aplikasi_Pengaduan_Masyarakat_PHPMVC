@@ -2,7 +2,7 @@
  <!-- End of Main Content -->
 
       <!-- Footer -->
-      <footer class="sticky-footer bg-white">
+      <footer class="sticky-footer bg-white no-print">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
             <span>DIBUAT OLEH <i class="fas fa-heart"></i> Alamahul Bayan &copy; 2023 </span>
