@@ -65,7 +65,7 @@ class TanggapiPengaduan extends Controller {
         $this->view('petugas');
         $className = $this->model('TanggapanModel');
         $data['judul'] = 'Lihat Tanggapan';
-        $data['tanggapan'] = $className->ambilSemuaTanggapanDanPetugasnya();
+        $data['tanggapan'] = $className->ambilSemuaTanggapanPetugasDanPengaduan();
         $tombol = $this->model('TombolModel')->__construct();
         $this->view('petugas');
         $this->view('templates/header', $data);

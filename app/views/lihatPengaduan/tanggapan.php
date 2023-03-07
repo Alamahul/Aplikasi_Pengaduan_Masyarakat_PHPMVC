@@ -9,7 +9,8 @@
   </div>
   
   <div class="card-body">
-  <?php if ($_SESSION['level'] == 'petugas' || $_SESSION['level'] == 'admin') :  ?>
+    
+  <?php if (isset($_SESSION['level'])) :  ?>
     <a href="<?= BASEURL; ?>/VerifikasiPengaduan/DataPengaduan" class="btn btn-secondary mb-3">
     <?php else: ?>
       <a href="<?= BASEURL; ?>/LihatPengaduan" class="btn btn-secondary mb-3">

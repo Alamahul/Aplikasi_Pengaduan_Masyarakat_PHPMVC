@@ -4,7 +4,7 @@ class CetakTanggapan extends Controller
 {
     public function index()
     {
-        $data['tanggapan'] = $this->model('tanggapanModel')->ambilSemuaTanggapanDanPetugasnya();
+        $data['tanggapan'] = $this->model('tanggapanModel')->ambilSemuaTanggapanPetugasDanPengaduan();
         $data['judul'] = 'Laporan Tanggapan Tanggal '. date('d M Y') . ' dari ' .$_SESSION['username'];
         $tombol = $this->model('TombolModel')->__construct();
         $this->view('petugas');
