@@ -17,6 +17,7 @@
                       <th>No</th>
                       <th>Tanggal Tanggapan</th>
                       <th>Tanggapan</th>
+                      <th>Judul Laporan</th>
                       <th>Nama Petugas</th>
                       <th>Level Petugas</th>
                   </thead>
@@ -25,6 +26,7 @@
                       <th>No</th>
                       <th>Tanggal Tanggapan</th>
                       <th>Tanggapan</th>
+                      <th>Judul Laporan</th>
                       <th>Nama Petugas</th>
                       <th>Level Petugas</th>
                     </tr>
@@ -38,6 +40,7 @@
                       <td><?= $no++  ?></td>
                       <td><?= $tanggapan['tgl_tanggapan'] ?></td>
                       <td><?= $tanggapan['tanggapan'] ?></td>
+                      <td><?= $tanggapan['judul_laporan'] ?></td>
                       <td><?= $tanggapan['nama_petugas'] ?></td>
                       <td><?= $tanggapan['level'] ?></td>
               
